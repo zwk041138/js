@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>带返回值的函数</title>
+	</head>
+	<body>
+		
+		num1:<input type="text" id='num1' />
+		<select name="op" id='op'>
+			<option value="+">+</option>
+			<option value="+">-</option>
+			<option value="+">*</option>
+			<option value="+">/</option>
+		</select>
+		num2:<input type="text" id='num2' />
+		=<span id="retult"></span>
+		<button onclick="calc()">计算</button>
+		
+		
+		<script type="text/javascript">
+			function calc(){
+				
+				var num1 = parseInt(document.getElementById('num1').value);
+				var num2 = parseInt(document.getElementById('num2').value) ;
+				var operator =  document.getElementById('op').value;
+				var sum=jishuan(num1,num2,operator);
+				//alert(sum);
+				document.getElementById('retult').innerText = sum;
+			}
+			function jishuan(n1,n2,oper){
+				switch (oper){
+					case "+":
+						return n1+n2;
+						break;
+					case "-":
+						return n1-n2;
+						break;
+					case "*":
+						return n1*n2;
+						break;
+					case "/":
+						return n1*n2;
+						break;	
+					default:
+						return '未知操作符';
+						break;
+				}
+			}
+			function	 sum(){
+				var i=10;
+				var j=20;
+				var s=i+j;
+				return s;//返回一个值，终止程序的执行
+				alert('helloween');
+			}
+//			var total = sum();
+//			alert(total);
+		</script>
+	</body>
+</html>
