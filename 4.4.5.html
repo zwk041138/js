@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>变量的作用域</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var sum = 20;//全局变量,在任何地方都可以使用；
+			function test(){
+				var num = 2;
+				var sum = 5;
+				x = 3; //全局变量,调用函数才能使用
+//				alert(num);
+				alert(sum);
+			}
+			alert(sum);
+			test();
+			alert(x);
+		</script>
+	</body>
+</html>
