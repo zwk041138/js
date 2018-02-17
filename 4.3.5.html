@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>break&continue&return语句</title>
+		<script type="text/javascript">
+			//break语句 终止循环，终止程序运行
+//			var count =1;
+//			while(count<=100){
+//				document.write(count+'<br/>');
+//				count++;
+//				if(count==51){
+//					break;
+//				}
+//			}
+		//contiue跳过循环
+//			var count =1;
+//			for (var i=0;i<=100;i++) {
+//				if(i==50){
+//					continue;
+//				}
+//				document.write(i+'<br/>');
+//			}
+//			return语句 1、终止语句；2、返回一个值
+			function sum(){
+				var s =0;
+				for (var i=0;i<=100;i++) {
+					s+=i;
+					if (s>100) {
+						return s;
+					}
+				}
+			}
+			document.write(sum());
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
