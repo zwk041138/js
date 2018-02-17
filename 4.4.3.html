@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>带参数的函数</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function	 doSomething(name,age){
+				var msg = '我叫'+name+'今年'+age+'岁';
+				alert(msg);
+			}
+//			doSomething('张三',23);
+//			doSomething('李四',45);
+			function	 sum(){
+				var sum = 0;
+				for(var temp in arguments){
+					sum += arguments[temp]; //相当于自加
+				}
+//				var sum = arguments[0]+arguments[1];
+				alert(sum);
+			}
+			sum(2,4);
+			sum(2,4,3);
+		</script>
+	</body>
+</html>
