@@ -4,3 +4,4 @@
 4.3.3：for循环
 4.3.4：for in语句的使用
 4.3.5：break&continue&return语句
+4.4.1：理解函数和函数的用途
