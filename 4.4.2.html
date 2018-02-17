@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>函数调用</title>
+		
+	</head>
+	<body>
+		<!--在html种，调用我们的函数-->
+		<button onclick="plus()">点击</button>
+		<a href="javascript:plus();">点击</a>
+		<script type="text/javascript">
+			//1、普通函数的调用~
+			function plus(){
+				var a=2;
+				var b=3;
+				var sum = a+b;
+				alert(sum);
+			}
+			//直接调用
+//			plus();
+			//2、表达式调用
+			var plus2=function plus2(){
+				var a=2;
+				var b=3;
+				var sum = a+b;
+				alert(sum);
+			}
+			plus2();
+			//3、对象内部方法的调用
+			var obj = {
+				name:'张三',
+				sayHI:function(){
+					alert('HELLOW!');
+				}
+			}
+			obj.sayHI();
+			//4、申明的同时进行调用
+			(function plus(){
+				var a=2;
+				var b=3;
+				var sum = a+b;
+				alert(sum);
+			})();
+		</script>
+	</body>
+</html>
